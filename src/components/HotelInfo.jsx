@@ -1,6 +1,6 @@
 import React from "react";
 import Welcome from "./Welcome.jsx"
-import amenitiesData from "./data/amenities.json"
+import accessibilityData from "./data/accessibilities.json"
 import servicesData from "./data/services.json"
 
 const HotelInfo = () => {
@@ -40,8 +40,8 @@ const HotelInfo = () => {
                 <p>We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
                 <ul>
                   {
-                    amenitiesData.map(amenity => 
-                      <li>{amenity.name}</li>
+                    accessibilityData.map(accessibility => 
+                      <li>{accessibility.name}</li>
                     )
                   }
                 </ul>
